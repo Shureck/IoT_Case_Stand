@@ -47,7 +47,6 @@ client.on_connect = on_connect
 client.on_message = on_message
 
 client.connect("192.168.1.31", 1883, 60)
-
 client.loop_start()
 
 async def dell_after(sid, secret):
@@ -64,8 +63,11 @@ def between_callback(sid, secret):
     loop.close()
 
 @app.get("/main")
-def giveMain():
-    return FileResponse("../main.html")
+def giveMain(key: str = None):
+    if key == "qwe":
+        return FileResponse("../main.html")
+    else:
+        return FileResponse("../refresh.html")
 
 @app.get("/setColor")
 def setColor(color):
@@ -80,7 +82,7 @@ async def connect(sid, environ):
     data = {}
     data['secret'] = secrets.token_urlsafe(8)
     await sio.emit('new_token', data)
-    threading.Timer(10.0,between_callback,args=(sid,data['secret'],)).start()
+    # threading.Timer(10.0,between_callback,args=(sid,data['secret'],)).start()
 
 
 @sio.on('message')
@@ -93,12 +95,18 @@ async def changColor(sid, data: object):
     client.publish("/devices/wb-mrgbw-d_78/controls/RGB",data)
     print(f'sender-{sid}: ', data)
 
+@sio.on('button')
+async def setState(sid, data: object):
+    client.publish("/devices/wb-gpio/controls/"+data,"1")
+    time.sleep(0.8)
+    client.publish("/devices/wb-gpio/controls/"+data,"0")
+    print(f'sender-{sid}: ', data)
+
 
 @sio.on('update_status')
 async def broadcast_status(sid, data: object):
     print(f'status {data["presence"]}')
     data['sid'] = sid
-    data['secret'] = data["secret"]
 
     if data not in current_active_users:
         current_active_users.append(data)

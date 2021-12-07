@@ -41,6 +41,47 @@
                 }
             }
         </style>
+
+        <style>
+            .valve{
+                -webkit-appearance: none;
+                background: #005af0;
+                border: none;
+                border-radius: 3px;
+                border-radius: 15px;
+                box-shadow: 0 15px 35px -5px rgba(0,0,0,.25);
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                font-family: Poppins,system;
+                font-size: 1em;
+                margin: 0 0 40px;
+                max-width: 100%;
+                padding: .75em 1.55em;
+                text-align: center;
+                text-decoration: none;
+                transition: transform .3s ease,box-shadow .3s ease;
+            }
+
+            .parent {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: auto;
+            }
+
+            .block {
+                width: 250px;
+                height: 250px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -125px 0 0 -125px;
+            }
+        </style>
+
     </head>
     <body>
         <div id="app">
@@ -90,6 +131,7 @@
                       secret: secret
                   });
                   this.socket.close();
+                  window.location.href = "http://localhost:8089/main"
               }
             });
 
@@ -102,23 +144,23 @@
         <script>
 
             function httpGet(theUrl)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-}
+            {
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+                xmlHttp.send( null );
+                return xmlHttp.responseText;
+            }
 
-  function hslToHex(h, s, l) {
-  l /= 100;
-  const a = s * Math.min(l, 1 - l) / 100;
-  const f = n => {
-    const k = (n + h / 30) % 12;
-    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-    return Math.round(255 * color);   // convert to Hex and prefix "0" if neede
-  };
-  return `${f(0)};${f(8)};${f(4)}`;
-}
+              function hslToHex(h, s, l) {
+              l /= 100;
+              const a = s * Math.min(l, 1 - l) / 100;
+              const f = n => {
+                const k = (n + h / 30) % 12;
+                const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+                return Math.round(255 * color);   // convert to Hex and prefix "0" if neede
+              };
+              return `${f(0)};${f(8)};${f(4)}`;
+            }
 
 
             var hh = 30;
@@ -130,12 +172,11 @@
                 },
                 data() {
                     return {
-                        msg: 'Welcome to Your Vue.js App',
+                        msg: 'IoT Case Stand',
                         color: {
                             hue: 30,
                             saturation: 100,
                             luminosity: 50,
-                            alpha: 1,
                         },
                     };
                 },
@@ -150,12 +191,17 @@
                             }
                         }, 1000);
                     },
-                    onSelect: function (hue) {
+                    OnSelect (hue) {
+                        alert('Мы все умрём')
                         this.color.hue = hue;
                         console.log('Color picker was dismissed', hue);
                     }
                 },
             }).mount('#app');
         </script>
+
+            <button class="valve" onclick="socket.emit('button','MOD1_IN1')">Кран</button>
+            <button class="valve" onclick="socket.emit('button','MOD1_IN2')">Вентилятор</button>
+            <button class="valve" onclick="socket.emit('button','MOD1_IN3')">Контактор</button>
     </body>
 </html>
