@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@radial-color-picker/vue-color-picker": "^5.0.1",
+    "socket.io": "^4.4.0",
+    "vue": "^2.6.14"
+  }
+}

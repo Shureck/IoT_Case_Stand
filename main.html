@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Radial Color Picker | Vue | Simple</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.prod.js"></script>
+        <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.umd.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css" />
+        <style>
+            #app {
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #2c3e50;
+                margin-top: 40px;
+            }
+
+            h1 {
+                font-weight: normal;
+            }
+
+            pre {
+                min-width: 275px;
+                padding: 15px 30px;
+                background: #f8f8f8;
+                color: #525252;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 1.6;
+                margin: 0;
+            }
+
+            @media (max-width: 420px) {
+                h1 {
+                    font-size: 1.4em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <color-picker v-bind="color" @input="onInput"></color-picker>
+            <h1>{{ msg }}</h1>
+            <pre>{{ color }}</pre>
+        </div>
+
+        <script src="node_modules/socket.io/client-dist/socket.io.js"></script>
+
+        <script>
+
+            var secret = ""
+
+            const SERVER = 'http://192.168.1.244:8089';
+            this.socket = io(SERVER, {
+                path: '/ws/socket.io'
+            });
+
+            // Socket events
+            this.socket.on('connect', () => {
+                console.log('Connected!');
+                this.socket.emit('update_status', {
+                    presence: 'online'
+                });
+            });
+
+            // handle the event sent with socket.send()
+            socket.on("message", data => {
+              console.log(data);
+            });
+
+            socket.on("new_token", data => {
+                if(secret == "") {
+                    secret = data['secret']
+                    console.log(secret);
+                }
+            });
+
+            socket.on("timer", data => {
+              console.log(data['secret']);
+              console.log(secret);
+              if (data['secret'] == secret) {
+                  document.body.style.background = 'red';
+                  this.socket.emit('update_status', {
+                      presence: 'offline',
+                      secret: secret
+                  });
+                  this.socket.close();
+              }
+            });
+
+            // handle the event sent with socket.emit()
+            socket.on("greetings", (elem1, elem2, elem3) => {
+              console.log(elem1, elem2, elem3);
+            });
+        </script>
+
+        <script>
+
+            function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+  function hslToHex(h, s, l) {
+  l /= 100;
+  const a = s * Math.min(l, 1 - l) / 100;
+  const f = n => {
+    const k = (n + h / 30) % 12;
+    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    return Math.round(255 * color);   // convert to Hex and prefix "0" if neede
+  };
+  return `${f(0)};${f(8)};${f(4)}`;
+}
+
+
+            var hh = 30;
+            var ColorPicker = window.VueColorPicker;
+
+            Vue.createApp({
+                components: {
+                    ColorPicker: ColorPicker,
+                },
+                data() {
+                    return {
+                        msg: 'Welcome to Your Vue.js App',
+                        color: {
+                            hue: 30,
+                            saturation: 100,
+                            luminosity: 50,
+                            alpha: 1,
+                        },
+                    };
+                },
+                methods: {
+                    onInput: function (hue) {
+                        this.color.hue = hue;
+                        setTimeout(() => {
+                            if(hh != this.color.hue) {
+                                console.log(hslToHex(this.color.hue, 100, 50));
+                                socket.emit("change_color", hslToHex(this.color.hue, 100, 50));
+                                hh = this.color.hue;
+                            }
+                        }, 1000);
+                    },
+                    onSelect: function (hue) {
+                        this.color.hue = hue;
+                        console.log('Color picker was dismissed', hue);
+                    }
+                },
+            }).mount('#app');
+        </script>
+    </body>
+</html>
