@@ -1,0 +1,172 @@
+.rcp{
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+}
+.parentAppContainer{
+  max-width: 700px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  row-gap: 80px;
+  grid-template-columns: 1fr;
+}
+.title{
+  font-family: SF Pro Rounded;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 4;
+  color: #7878AB;
+}
+.colorPickerParent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colorPickerParentBackground{
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colorPickerParentBackground div:nth-child(1){
+  background-image: url("/images/first.svg");
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  z-index: 3;
+  background-size: cover;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 50px 15px;
+  text-align: center;
+  grid-template-columns: 1fr;
+}
+
+*{
+  font-family: 'SFRounded';
+}
+
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 10px;
+  z-index: 9;
+}
+
+.valve{
+  flex: 1 1 auto;
+  text-align: center;
+  outline: none;
+  transition: all 100ms ease;
+  width: fit-content;
+  background: #F5F5FA;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 5px 5px 10px rgba(170, 170, 204, 0.25), 10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #FFFFFF;
+  border-radius: 32px;
+  border: 0px;
+  padding: 1px 30px;
+  font-family: SF Pro Rounded;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #7878AB;
+  cursor: pointer;
+  justify-content: center;
+}
+.valve:active{
+  background: #E5E5F0;
+  box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.5), -5px -5px 10px #FFFFFF;
+  border-radius: 32px;
+}
+
+.tableParent{
+  align-items: center;
+  background: linear-gradient(144.08deg, #EBFEFF 21.01%, rgba(255, 244, 254, 0.567708) 54.93%, #ECFFEB 99.48%), linear-gradient(123.84deg, #E5E5E5 0.32%, #CDD5E0 32.08%, #CDD5E0 60.87%, #FFFFFF 95.61%);
+  border-radius: 20px;
+  display: grid;
+  text-align: left;
+  row-gap: 10px;
+  font-size: 18px;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 10px;
+  padding: 40px;
+  color: #303064;
+}
+
+.tableTitle1{
+  margin-bottom: 15px;
+  background-image: url("/images/valueTitleText.svg");
+  width: 100px;
+  height: 16px;
+}
+.tableTitle2{
+  margin-bottom: 15px;
+  background-image: url("/images/titleText.svg");
+  width: 101px;
+  height: 16px;
+}
+
+@media(max-width: 900px) {
+  .tableParent{
+    padding: 25px;
+  }
+  #app{
+    padding: 50px 10px;
+  }
+}
+
+
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('/fonts/SFRounded-Light.woff2') format('woff2'),
+  url('/fonts/SFRounded-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('/fonts/SFRounded-Heavy.woff2') format('woff2'),
+  url('/fonts/SFRounded-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('/fonts/SFRounded-Semibold.woff2') format('woff2'),
+  url('/fonts/SFRounded-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFRounded';
+  src: url('/fonts/SFRounded-Regular.woff2') format('woff2'),
+  url('/fonts/SFRounded-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

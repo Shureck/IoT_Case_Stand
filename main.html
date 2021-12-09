@@ -1,270 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Radial Color Picker | Vue | Simple</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.prod.js"></script>
-        <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.umd.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css" />
-        <style>
-            #app {
-                font-family: 'Avenir', Helvetica, Arial, sans-serif;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                color: #2c3e50;
-                margin-top: 40px;
-            }
-
-            h1 {
-                font-weight: normal;
-            }
-
-            pre {
-                min-width: 275px;
-                padding: 15px 30px;
-                background: #f8f8f8;
-                color: #525252;
-                font-size: 15px;
-                font-weight: bold;
-                line-height: 1.6;
-                margin: 0;
-            }
-
-            @media (max-width: 420px) {
-                h1 {
-                    font-size: 1.4em;
-                }
-            }
-        </style>
-
-        <style>
-            .valve{
-                -webkit-appearance: none;
-                background: #005af0;
-                border: none;
-                border-radius: 3px;
-                border-radius: 15px;
-                box-shadow: 0 15px 35px -5px rgba(0,0,0,.25);
-                color: #fff;
-                cursor: pointer;
-                display: inline-block;
-                font-family: Poppins,system;
-                font-size: 1em;
-                margin: 0 0 40px;
-                max-width: 100%;
-                padding: .75em 1.55em;
-                text-align: center;
-                text-decoration: none;
-                transition: transform .3s ease,box-shadow .3s ease;
-            }
-
-            .parent {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                overflow: auto;
-            }
-
-            .block {
-                width: 250px;
-                height: 250px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin: -125px 0 0 -125px;
-            }
-
-        </style>
-
-        <style>
-            table {
-                width: 100%;
-                border: none;
-                margin-bottom: 20px;
-                border-collapse: separate;
-            }
-            table thead th {
-                font-weight: bold;
-                text-align: left;
-                border: none;
-                padding: 10px 15px;
-                background: #EDEDED;
-                font-size: 14px;
-                border-top: 1px solid #ddd;
-            }
-            table tr th:first-child, .table tr td:first-child {
-                border-left: 1px solid #ddd;
-            }
-            table tr th:last-child, .table tr td:last-child {
-                border-right: 1px solid #ddd;
-            }
-            table thead tr th:first-child {
-                border-radius: 20px 0 0 0;
-            }
-            table thead tr th:last-child {
-                border-radius: 0 20px 0 0;
-            }
-            table tbody td {
-                text-align: left;
-                border: none;
-                padding: 10px 15px;
-                font-size: 14px;
-                vertical-align: top;
-            }
-            table tbody tr:nth-child(2n-1) {
-                background: #F8F8F8;
-            }
-            table tbody tr:last-child td{
-                border-bottom: 1px solid #ddd;
-            }
-            table tbody tr:last-child td:first-child {
-                border-radius: 0 0 0 20px;
-            }
-            table tbody tr:last-child td:last-child {
-                border-radius: 0 0 20px 0;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="app">
-            <color-picker v-bind="color" @input="onInput"></color-picker>
-            <h1>{{ msg }}</h1>
-            <pre>{{ color }}</pre>
+<head>
+    <meta charset="utf-8"/>
+    <title>Radial Color Picker | Vue | Simple</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.umd.min.js"></script>
+    <link rel="stylesheet"
+          href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css"/>
+    <link href="styles.css" rel="stylesheet">
+    <script src="/node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script type="text/javascript" src="/scripts/initColorPicker.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="parentAppContainer">
+        <div class="title">
+            IoT Case Stand
         </div>
-
-        <script src="/case/node_modules/socket.io/client-dist/socket.io.js"></script>
-
-        <script>
-
-            var secret = ""
-
-            const SERVER = 'https://levandrovskiy.ru';
-            this.socket = io(SERVER, {
-                path: '/case/ws/socket.io'
-            });
-
-            // Socket events
-            this.socket.on('connect', () => {
-                console.log('Connected!');
-                this.socket.emit('update_status', {
-                    presence: 'online'
-                });
-            });
-
-            // handle the event sent with socket.send()
-            socket.on("message", data => {
-              console.log(data);
-            });
-
-            socket.on("new_token", data => {
-                if(secret == "") {
-                    secret = data['secret']
-                    console.log(secret);
-                }
-            });
-
-            socket.on("topic_data", data => {
-                console.log(""+data['topic']+" "+data["msg"]);
-                if (data['topic'] != "/devices/wb-mrgbw-d_78/controls/RGB") {
-                    item = document.getElementById(data['topic']).innerText = data["msg"];
-                }
-            });
-
-            socket.on("timer", data => {
-              console.log(data['secret']);
-              console.log(secret);
-              if (data['secret'] == secret) {
-                  document.body.style.background = 'red';
-                  this.socket.emit('update_status', {
-                      presence: 'offline',
-                      secret: secret
-                  });
-                  this.socket.close();
-                  window.location.href = "https://levandrovskiy.ru/case"
-              }
-            });
-
-            // handle the event sent with socket.emit()
-            socket.on("greetings", (elem1, elem2, elem3) => {
-              console.log(elem1, elem2, elem3);
-            });
-        </script>
-
-        <script>
-
-            function httpGet(theUrl)
-            {
-                var xmlHttp = new XMLHttpRequest();
-                xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-                xmlHttp.send( null );
-                return xmlHttp.responseText;
-            }
-
-              function hslToHex(h, s, l) {
-              l /= 100;
-              const a = s * Math.min(l, 1 - l) / 100;
-              const f = n => {
-                const k = (n + h / 30) % 12;
-                const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-                return Math.round(255 * color);   // convert to Hex and prefix "0" if neede
-              };
-              return `${f(0)};${f(8)};${f(4)}`;
-            }
-
-
-            var hh = 30;
-            var ColorPicker = window.VueColorPicker;
-
-            Vue.createApp({
-                components: {
-                    ColorPicker: ColorPicker,
-                },
-                data() {
-                    return {
-                        msg: 'IoT Case Stand',
-                        color: {
-                            hue: 30
-                        },
-                    };
-                },
-                methods: {
-                    onInput: function (hue) {
-                        this.color.hue = hue;
-                        setTimeout(() => {
-                            if(hh != this.color.hue) {
-                                console.log(hslToHex(this.color.hue, 100, 50));
-                                socket.emit("change_color", hslToHex(this.color.hue, 100, 50));
-                                hh = this.color.hue;
-                            }
-                        }, 100);
-                    },
-                    OnSelect (hue) {
-                        alert('Мы все умрём')
-                        this.color.hue = hue;
-                        console.log('Color picker was dismissed', hue);
-                    }
-                },
-            }).mount('#app');
-        </script>
-
+        <div class="colorPickerParent">
+            <div class="colorPicker">
+                <color-picker v-bind="color" @input="onInput"></color-picker>
+            </div>
+            <div class="colorPickerParentBackground">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="buttonContainer">
             <button class="valve" onclick="socket.emit('button','MOD1_IN1')">Кран</button>
             <button class="valve" onclick="socket.emit('button','MOD1_IN2')">Вентилятор</button>
             <button class="valve" onclick="socket.emit('button','MOD1_IN3')">Контактор</button>
-
-            <table>
-               <tr><td>Температура</td><td id="/devices/wb-msw-v3_21/controls/Temperature"></td></tr>
-               <tr><td>Влажность</td><td id="/devices/wb-msw-v3_21/controls/Humidity"></td></tr>
-               <tr><td>Датчик CO2</td><td id="/devices/wb-msw-v3_21/controls/CO2"></td></tr>
-               <tr><td>Датчик движения</td><td id="/devices/wb-msw-v3_21/controls/Current Motion"></td></tr>
-               <tr><td>Датчик шума</td><td id="/devices/wb-msw-v3_21/controls/Sound Level"></td></tr>
-               <tr><td>Датчик освещённости</td><td id="/devices/wb-msw-v3_21/controls/Illuminance"></td></tr>
-            </table>
-    </body>
+        </div>
+        <div class="tableParent">
+            <div class="tableTitle1"></div>
+            <div class="tableTitle2"></div>
+            <div>Температура</div>
+            <div id="/devices/wb-msw-v3_21/controls/Temperature"></div>
+            <div>Влажность</div>
+            <div id="/devices/wb-msw-v3_21/controls/Humidity"></div>
+            <div>Датчик CO2</div>
+            <div id="/devices/wb-msw-v3_21/controls/CO2"></div>
+            <div>Датчик движения</div>
+            <div id="/devices/wb-msw-v3_21/controls/Current Motion"></div>
+            <div>Датчик шума</div>
+            <div id="/devices/wb-msw-v3_21/controls/Sound Level"></div>
+            <div>Датчик освещенности</div>
+            <div id="/devices/wb-msw-v3_21/controls/Illuminance"></div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
