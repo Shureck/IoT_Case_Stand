@@ -20,8 +20,8 @@ sio = socketio.AsyncServer(
 app = FastAPI()
 sio_app = socketio.ASGIApp(sio)
 
-app.mount("/node_modules", StaticFiles(directory="../node_modules"), name="node_modules")
-app.mount('/ws', sio_app)
+app.mount("/case/node_modules", StaticFiles(directory="../node_modules"), name="node_modules")
+app.mount('/case/ws', sio_app)
 
 origins = [
     "*"
@@ -35,6 +35,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+data_case = {}
+
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
     client.subscribe("/devices/wb-mrgbw-d_78/controls/RGB")
@@ -46,7 +48,8 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe("/devices/wb-msw-v3_21/controls/Humidity")
 
 def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload.decode('utf-8')))
+    # print(msg.topic+" "+str(msg.payload.decode('utf-8')))
+    data_case[msg.topic] = str(msg.payload.decode('utf-8'))
     data = {"topic": msg.topic, "msg": str(msg.payload.decode('utf-8'))}
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
@@ -74,7 +77,7 @@ def between_callback(sid, secret):
     loop.run_until_complete(dell_after(sid, secret))
     loop.close()
 
-@app.get("/main")
+@app.get("/case")
 def giveMain(key: str = None):
     if key == "qwe":
         return FileResponse("../main.html")
@@ -94,6 +97,10 @@ async def connect(sid, environ):
     data = {}
     data['secret'] = secrets.token_urlsafe(8)
     await sio.emit('new_token', data)
+    for i in data_case:
+        data = {"topic": i, "msg": data_case[i]}
+        print("data _______", data)
+        await sio.emit('topic_data', data)
     # threading.Timer(10.0,between_callback,args=(sid,data['secret'],)).start()
 
 

@@ -139,15 +139,15 @@
             <pre>{{ color }}</pre>
         </div>
 
-        <script src="node_modules/socket.io/client-dist/socket.io.js"></script>
+        <script src="/case/node_modules/socket.io/client-dist/socket.io.js"></script>
 
         <script>
 
             var secret = ""
 
-            const SERVER = 'http://192.168.1.245:8089';
+            const SERVER = 'https://levandrovskiy.ru';
             this.socket = io(SERVER, {
-                path: '/ws/socket.io'
+                path: '/case/ws/socket.io'
             });
 
             // Socket events
@@ -172,7 +172,9 @@
 
             socket.on("topic_data", data => {
                 console.log(""+data['topic']+" "+data["msg"]);
-                item = document.getElementById(data['topic']).innerText = data["msg"];
+                if (data['topic'] != "/devices/wb-mrgbw-d_78/controls/RGB") {
+                    item = document.getElementById(data['topic']).innerText = data["msg"];
+                }
             });
 
             socket.on("timer", data => {
@@ -185,7 +187,7 @@
                       secret: secret
                   });
                   this.socket.close();
-                  window.location.href = "http://192.168.1.245:8089/main"
+                  window.location.href = "https://levandrovskiy.ru/case"
               }
             });
 
