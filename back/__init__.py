@@ -38,9 +38,21 @@ app.add_middleware(
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
     client.subscribe("/devices/wb-mrgbw-d_78/controls/RGB")
+    client.subscribe("/devices/wb-msw-v3_21/controls/Temperature")
+    client.subscribe("/devices/wb-msw-v3_21/controls/Current Motion")
+    client.subscribe("/devices/wb-msw-v3_21/controls/Illuminance")
+    client.subscribe("/devices/wb-msw-v3_21/controls/Sound Level")
+    client.subscribe("/devices/wb-msw-v3_21/controls/CO2")
+    client.subscribe("/devices/wb-msw-v3_21/controls/Humidity")
 
 def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload))
+    print(msg.topic+" "+str(msg.payload.decode('utf-8')))
+    data = {"topic": msg.topic, "msg": str(msg.payload.decode('utf-8'))}
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(sio.emit('topic_data', data))
+    loop.close()
+
 
 client = mqtt.Client()
 client.on_connect = on_connect
@@ -92,7 +104,7 @@ async def broadcast(sid, data: object):
 
 @sio.on('change_color')
 async def changColor(sid, data: object):
-    client.publish("/devices/wb-mrgbw-d_78/controls/RGB",data)
+    client.publish("/devices/wb-mrgbw-d_78/controls/RGB/on",data)
     print(f'sender-{sid}: ', data)
 
 @sio.on('button')
