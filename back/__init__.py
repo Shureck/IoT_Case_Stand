@@ -21,6 +21,10 @@ app = FastAPI()
 sio_app = socketio.ASGIApp(sio)
 
 app.mount("/case/node_modules", StaticFiles(directory="../node_modules"), name="node_modules")
+app.mount("/case/scripts", StaticFiles(directory="../scripts"), name="scripts")
+app.mount("/case/images", StaticFiles(directory="../images"), name="images")
+app.mount("/case/fonts", StaticFiles(directory="../fonts"), name="fonts")
+app.mount("/case/styles", StaticFiles(directory="../styles"), name="styles")
 app.mount('/case/ws', sio_app)
 
 origins = [
@@ -61,7 +65,7 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("192.168.1.31", 1883, 60)
+# client.connect("192.168.1.31", 1883, 60)
 client.loop_start()
 
 async def dell_after(sid, secret):

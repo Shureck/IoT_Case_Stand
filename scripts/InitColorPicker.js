@@ -1,6 +1,6 @@
 var secret = ""
 
-const SERVER = 'https://levandrovskiy.ru';
+const SERVER = 'https://iot-dod-2021.rtuitlab.dev';
 this.socket = io(SERVER, {
   path: '/case/ws/socket.io'
 });
