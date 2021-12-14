@@ -92,6 +92,10 @@ window.onload = () => {
       ColorPicker: ColorPicker,
     },
     data() {
+        window.setHuyeToColorPicker=(e)=>{
+            this.color.hue=e
+        }
+
       return {
         msg: 'IoT Case Stand',
         color: {
