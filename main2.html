@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IoT Case Stand</title>
+    <meta name="og:description" content="Страница управления системами умного дома">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:image" content="https://files.rtuitlab.dev/logo/wallpaperMedium.png"/>
+    <meta property="og:image:width" content="1365"/>
+    <meta property="og:image:height" content="768"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="/case/2/images/favicon.ico">
+    <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.umd.min.js"></script>
+    <link rel="stylesheet"
+          href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css"/>
+    <link href="/case/2/styles/styles.css" rel="stylesheet">
+    <script src="/case/2/scripts/socket.io.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="parentAppContainer">
+        <div class="title">
+            IoT Case Stand
+        </div>
+        <div class="colorPickerParent">
+            <div class="colorPicker">
+                <color-picker v-bind="color" @input="onInput" @setup="setup" id="colorPicker"></color-picker>
+            </div>
+            <div class="colorPickerParentBackground">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <button class="valve" onclick="socket.emit('button','MOD1_IN1')">Кран</button>
+            <button class="valve" onclick="socket.emit('button','MOD1_IN2')">Вентилятор</button>
+            <button class="valve" onclick="socket.emit('button','MOD1_IN3')">Контактор</button>
+        </div>
+        <div class="tableParent">
+            <div class="tableTitle">Название</div>
+            <div class="tableTitle">Значение</div>
+            <div>Температура</div>
+            <div id="/devices/wb-msw-v3_21/controls/Temperature"></div>
+            <div>Влажность</div>
+            <div id="/devices/wb-msw-v3_21/controls/Humidity"></div>
+            <div>Датчик CO2</div>
+            <div id="/devices/wb-msw-v3_21/controls/CO2"></div>
+            <div>Датчик движения</div>
+            <div id="/devices/wb-msw-v3_21/controls/Current Motion"></div>
+            <div>Датчик шума</div>
+            <div id="/devices/wb-msw-v3_21/controls/Sound Level"></div>
+            <div>Датчик освещенности</div>
+            <div id="/devices/wb-msw-v3_21/controls/Illuminance"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/case/2/scripts/initColorPicker2.js"></script>
+</body>
+</html>

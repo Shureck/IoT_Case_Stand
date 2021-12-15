@@ -16,15 +16,15 @@ import logging
 import json
 
 logger=logging.getLogger()
-logger.setLevel(logging.BASIC_FORMAT)
+logger.setLevel(logging.INFO)
 
-file_handler=logging.FileHandler('foo1.log')
+file_handler=logging.FileHandler('foo2.log')
 stream_handler=logging.StreamHandler()
 
 stream_formatter=logging.Formatter(
     '%(asctime)-15s %(levelname)-8s %(message)s')
 file_formatter=logging.Formatter(
-    "{'time':'%(asctime)s', 'level': '%(levelname)s', 'message': '%(message)s'}"
+    "{'time':'%(asctime)s', 'name': '%(name)s', 'level': '%(levelname)s', 'message': '%(message)s'}"
 )
 
 file_handler.setFormatter(file_formatter)
@@ -40,12 +40,12 @@ sio = socketio.AsyncServer(
 app = FastAPI()
 sio_app = socketio.ASGIApp(sio)
 
-app.mount("/case/1/node_modules", StaticFiles(directory="../node_modules"), name="node_modules")
-app.mount("/case/1/scripts", StaticFiles(directory="../scripts"), name="scripts")
-app.mount("/case/1/images", StaticFiles(directory="../images"), name="images")
-app.mount("/case/1/fonts", StaticFiles(directory="../fonts"), name="fonts")
-app.mount("/case/1/styles", StaticFiles(directory="../styles"), name="styles")
-app.mount('/case/1/ws', sio_app)
+app.mount("/case/2/node_modules", StaticFiles(directory="../node_modules"), name="node_modules")
+app.mount("/case/2/scripts", StaticFiles(directory="../scripts"), name="scripts")
+app.mount("/case/2/images", StaticFiles(directory="../images"), name="images")
+app.mount("/case/2/fonts", StaticFiles(directory="../fonts"), name="fonts")
+app.mount("/case/2/styles", StaticFiles(directory="../styles"), name="styles")
+app.mount('/case/2/ws', sio_app)
 
 origins = [
     "*"
@@ -105,7 +105,7 @@ def between_callback(sid, secret):
     loop.run_until_complete(dell_after(sid, secret))
     loop.close()
 
-@app.get("/case/1")
+@app.get("/case/2")
 async def giveMain(key: str = None):
     global qr_secret
     if key == "qwe" or key == qr_secret:
@@ -114,13 +114,13 @@ async def giveMain(key: str = None):
         qr_secret = secrets.token_urlsafe(10)
         data['qr_secret'] = qr_secret
         await sio.emit('new_qr', data)
-        return FileResponse("../main1.html")
+        return FileResponse("../main2.html")
     else:
         return FileResponse("../refresh.html")
 
-@app.get("/case/1/getQR")
+@app.get("/case/2/getQR")
 def setColor():
-    return FileResponse("../qr_generator1.html")
+    return FileResponse("../qr_generator2.html")
 
 
 current_active_users = []
@@ -154,8 +154,6 @@ async def setState(sid, data: object):
     client.publish("/devices/wb-gpio/controls/"+data,"1")
     time.sleep(0.8)
     client.publish("/devices/wb-gpio/controls/"+data,"0")
-    # dic = {"sid":sid,"secret": "asd646asd1345", "action": "changeColor", "value": "202;45;21"}
-    logger.(json.dumps(dic))
     print(f'sender-{sid}: ', data)
 
 
@@ -166,7 +164,7 @@ async def broadcast_status(sid, data: object):
     if not data['qr_secret_html'] in qr_que:
         await sio.emit("timer",data)
     else:
-        threading.Timer(30.0, between_callback, args=(sid, data['secret'],)).start()
+        threading.Timer(10.0, between_callback, args=(sid, data['secret'],)).start()
     if data not in current_active_users:
         current_active_users.append(data)
 
@@ -194,4 +192,4 @@ async def disconnect(sid):
     await sio.emit('re_evaluate_status')
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8089)
+    uvicorn.run(app, host="0.0.0.0", port=8099)

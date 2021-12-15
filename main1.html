@@ -2,16 +2,23 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Radial Color Picker | Vue | Simple</title>
+    <title>IoT Case Stand</title>
+    <meta name="og:description" content="Страница управления системами умного дома">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:image" content="https://files.rtuitlab.dev/logo/wallpaperMedium.png"/>
+    <meta property="og:image:width" content="1365"/>
+    <meta property="og:image:height" content="768"/>
+    <meta property="og:image:type" content="image/png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="/case/1/images/favicon.ico">
     <script src="https://unpkg.com/vue@3.1.5/dist/vue.global.prod.js"></script>
     <script src="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.umd.min.js"></script>
     <link rel="stylesheet"
           href="https://unpkg.com/@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css"/>
-    <link href="/case/styles/styles.css" rel="stylesheet">
-    <script src="/case/node_modules/socket.io/client-dist/socket.io.js"></script>
-    <script type="text/javascript" src="/case/scripts/initColorPicker.js"></script>
+    <link href="/case/1/styles/styles.css" rel="stylesheet">
+    <script src="/case/1/scripts/socket.io.min.js"></script>
 </head>
 <body>
 <div id="app">
@@ -35,8 +42,8 @@
             <button class="valve" onclick="socket.emit('button','MOD1_IN3')">Контактор</button>
         </div>
         <div class="tableParent">
-            <div class="tableTitle1"></div>
-            <div class="tableTitle2"></div>
+            <div class="tableTitle">Название</div>
+            <div class="tableTitle">Значение</div>
             <div>Температура</div>
             <div id="/devices/wb-msw-v3_21/controls/Temperature"></div>
             <div>Влажность</div>
@@ -52,5 +59,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="/case/1/scripts/initColorPicker1.js"></script>
 </body>
 </html>
