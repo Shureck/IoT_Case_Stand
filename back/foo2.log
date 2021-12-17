@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {'time':'2021-12-17 14:03:39,105', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [14297]'}
 {'time':'2021-12-17 14:03:39,106', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
 {'time':'2021-12-17 14:03:39,107', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
@@ -805,3 +806,39 @@ UnboundLocalError: local variable 'data' referenced before assignment
 {'time':'2021-12-17 15:43:35,758', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application shutdown.'}
 {'time':'2021-12-17 15:43:35,760', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application shutdown complete.'}
 {'time':'2021-12-17 15:43:35,764', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Finished server process [22467]'}
+=======
+{'time':'2021-12-17 16:57:15,657', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [10212]'}
+{'time':'2021-12-17 16:57:15,657', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 16:57:15,658', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 16:57:15,658', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 16:57:22,108', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51395) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:57:22,118', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:57:39,488', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51493) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:57:39,488', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:57:59,741', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 64970) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:57:59,741', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:58:10,008', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 16:58:27,187', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 65430) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:58:27,187', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:58:37,378', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 16:58:46,378', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 49160) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:58:46,378', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:58:56,537', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 16:58:56,588', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 49314) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:58:56,588', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:58:56,987', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 16:59:33,132', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [19840]'}
+{'time':'2021-12-17 16:59:33,137', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 16:59:33,137', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 16:59:33,137', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 16:59:33,567', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 49548) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:59:33,567', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:59:34,197', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 65371) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:59:34,197', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:59:36,287', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 16:59:36,923', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 65407) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:59:36,923', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 16:59:43,577', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 65483) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 16:59:43,577', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 17:00:29,847', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+>>>>>>> 5b9b63e (add second stand, try to work with logs)
