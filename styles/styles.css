@@ -35,7 +35,7 @@
   align-items: center;
 }
 .colorPickerParentBackground div:nth-child(1){
-  background-image: url("/case/images/first.svg");
+  background-image: url("first.svg");
   width: 350px;
   height: 350px;
   position: absolute;
@@ -131,7 +131,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url('/case/fonts/Nunito-Light.ttf');
+  src: url('Nunito-Light.ttf');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -139,7 +139,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url('/case/fonts/Nunito-Black.ttf');
+  src: url('Nunito-Black.ttf');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -147,7 +147,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url('/case/fonts/Nunito-SemiBold.ttf');
+  src: url('Nunito-SemiBold.ttf');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -155,7 +155,7 @@
 
 @font-face {
   font-family: "Nunito";
-  src: url('/case/fonts/Nunito-Regular.ttf');
+  src: url('Nunito-Regular.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

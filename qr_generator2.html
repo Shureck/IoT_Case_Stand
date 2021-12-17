@@ -21,7 +21,10 @@
         const SERVER = '';
         this.socket = io(SERVER, {
             path: '/case/2/ws/socket.io',
-            transports: ["websocket"]
+            transports: ["websocket"],
+            auth: {
+                qr_viewer_key: location.hash
+            }
         });
 
         // handle the event sent with socket.send()

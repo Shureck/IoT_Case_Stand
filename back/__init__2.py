@@ -40,11 +40,8 @@ sio = socketio.AsyncServer(
 app = FastAPI()
 sio_app = socketio.ASGIApp(sio)
 
-app.mount("/case/2/node_modules",
-          StaticFiles(directory="../node_modules"), name="node_modules")
 app.mount("/case/2/scripts", StaticFiles(directory="../scripts"), name="scripts")
 app.mount("/case/2/images", StaticFiles(directory="../images"), name="images")
-app.mount("/case/2/fonts", StaticFiles(directory="../fonts"), name="fonts")
 app.mount("/case/2/styles", StaticFiles(directory="../styles"), name="styles")
 app.mount('/case/2/ws', sio_app)
 
@@ -91,29 +88,32 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-# client.connect("192.168.1.31", 1883, 60)
-# client.loop_start()
+client.connect("192.168.1.31", 1883, 60)
+client.loop_start()
 
 
-async def dell_after(sid):
-    qr_que.pop(0)
+async def dell_after(sid, token):
+    if token in qr_que:
+        qr_que.remove(token)
     print({"event": "dell_pop", "current_queue": qr_que})
     await sio.disconnect(sid)
     print("I killed", sid)
 
 
-def between_callback(sid):
+def between_callback(sid, token):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
-    loop.run_until_complete(dell_after(sid))
+    loop.run_until_complete(dell_after(sid, token))
     loop.close()
 
 
 @app.get("/case/2")
 async def giveMain(key: str = None):
     global qr_secret
-    if key == qr_secret:
+    if key in qr_que:
+        return FileResponse("../main2.html")
+    elif key == qr_secret:
         data = {}
         qr_que.append(qr_secret)
         qr_secret = secrets.token_urlsafe(10)
@@ -135,26 +135,26 @@ current_active_users = []
 @sio.event
 async def connect(sid, environ, auth=None):
     print(f"{sid} is connected.")
-    if auth:
-        if not auth['token'] in qr_que:
-            raise ConnectionRefusedError('authentication failed')
-        else:
-            await sio.save_session(sid, {"authorized": True})
-            threading.Timer(5.0, between_callback, args=(sid, )).start()
-    else:
+    print(auth)
+    if 'token' in auth and auth['token'] in qr_que:
+        await sio.save_session(sid, {"authorized": True})
+        threading.Timer(60.0, between_callback, args=(sid, auth['token'], )).start()
+        for i in data_case:
+            data = {"topic": i, "msg": data_case[i]}
+            print("data _______", data)
+            await sio.emit('topic_data', data)
+    elif "qr_viewer_key" in auth and auth["qr_viewer_key"] == "#qwe":
         await sio.save_session(sid, {"authorized": False})
         await sio.emit('new_qr', {"qr_secret": qr_secret}, sid)
-    for i in data_case:
-        data = {"topic": i, "msg": data_case[i]}
-        print("data _______", data)
-        await sio.emit('topic_data', data)
-    # threading.Timer(10.0,between_callback,args=(sid,data_s['secret'],)).start()
+    else:
+        raise ConnectionRefusedError('authentication failed')
 
 
 @sio.on('change_color')
 async def changColor(sid, data: object):
     session = await sio.get_session(sid)
     if not session["authorized"]:
+        print(session )
         return
 
     client.publish("/devices/wb-mrgbw-d_78/controls/RGB/on", data)
