@@ -1,0 +1,28 @@
+{'time':'2021-12-15 17:46:57,507', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,554', 'level': 'INFO', 'message': 'Started server process [16696]'}
+{'time':'2021-12-15 17:46:57,554', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-15 17:46:57,554', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-15 17:46:57,555', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8089 (Press CTRL+C to quit)'}
+{'time':'2021-12-15 17:46:57,558', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,621', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,622', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,622', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,623', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,624', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,624', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,625', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:57,749', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:59,242', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:46:59,373', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:00,602', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:00,656', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:00,751', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:01,154', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:01,209', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:01,292', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:02,610', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:02,769', 'level': 'DEBUG', 'message': 'Using selector: SelectSelector'}
+{'time':'2021-12-15 17:47:25,048', 'level': 'INFO', 'message': 'Started server process [19076]'}
+{'time':'2021-12-15 17:47:25,048', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-15 17:47:25,049', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-15 17:47:25,049', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8089 (Press CTRL+C to quit)'}
