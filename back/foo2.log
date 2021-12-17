@@ -1,0 +1,807 @@
+{'time':'2021-12-17 14:03:39,105', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [14297]'}
+{'time':'2021-12-17 14:03:39,106', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:03:39,107', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:03:39,108', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:03:40,670', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50336) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:03:40,673', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:03:45,544', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50342) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:03:45,546', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:04:02,863', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50370) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:04:02,865', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:04:05,448', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50380) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:04:05,450', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:04:15,882', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:04:24,527', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50408) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:04:24,528', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:04:35,055', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:06:29,746', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:06:30,080', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50590) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:06:30,081', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:06:35,876', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [15755]'}
+{'time':'2021-12-17 14:06:35,877', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:06:35,878', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:06:35,880', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:06:36,816', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50610) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:06:36,817', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:06:37,252', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50614) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:06:37,254', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:06:38,691', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50616) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:06:38,693', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:06:43,063', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:06:43,288', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50630) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:06:43,289', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:06:45,421', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:06:48,930', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50642) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:06:48,932', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:07:02,219', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:07:02,544', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50678) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:07:02,545', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:07:06,864', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:07:18,392', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:07:18,623', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50710) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:07:18,624', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:07:24,125', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:07:24,635', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50726) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:07:24,636', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:07:36,923', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:07:37,475', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50748) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:07:37,476', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:07:39,709', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:07:42,997', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50762) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:07:42,998', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:07:50,335', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:07:50,850', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50778) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:07:50,852', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:08:33,552', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:08:34,062', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50852) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:08:34,063', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:08:54,954', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:08:55,475', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50888) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:08:55,476', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:09:30,632', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:09:31,318', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 50960) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:09:31,320', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:09:46,055', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:11:17,741', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51148) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:11:17,743', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:11:20,923', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51154) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:11:20,925', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:11:31,424', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:17:27,161', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:17:27,498', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51672) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:17:27,499', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:17:29,239', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51676) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:17:29,240', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:17:39,765', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:17:57,989', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51714) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:17:57,990', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:17:59,525', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:17:59,826', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51718) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:17:59,827', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:17:59,879', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51720) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:17:59,881', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:18:01,502', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:18:01,912', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 51732) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:18:01,913', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:18:02,958', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:18:02,958', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:18:12,332', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:28:09,013', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52566) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:28:09,014', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:28:16,795', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52588) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:28:16,796', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:28:18,790', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:28:20,997', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:28:21,607', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52608) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:28:21,608', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:28:21,756', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() takes 2 positional arguments but 3 were given
+{'time':'2021-12-17 14:29:23,052', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:29:26,016', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52700) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:29:26,018', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:29:29,621', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:29:30,246', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52720) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:29:30,248', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:29:30,365', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() takes 2 positional arguments but 3 were given
+{'time':'2021-12-17 14:29:41,364', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [25889]'}
+{'time':'2021-12-17 14:29:41,365', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:29:41,366', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:29:41,367', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:29:41,690', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52756) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:29:41,692', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:29:44,193', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52760) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:29:44,195', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:29:44,295', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() takes 2 positional arguments but 3 were given
+{'time':'2021-12-17 14:29:44,607', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:29:47,631', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52776) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:29:47,634', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:29:49,574', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:29:50,083', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52788) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:29:50,084', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:29:50,231', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() takes 2 positional arguments but 3 were given
+{'time':'2021-12-17 14:30:36,923', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:30:39,132', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52872) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:30:39,134', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:30:40,671', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:30:41,208', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 52886) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:30:41,210', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:30:41,331', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() takes 2 positional arguments but 3 were given
+{'time':'2021-12-17 14:33:00,205', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [27418]'}
+{'time':'2021-12-17 14:33:00,206', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:33:00,207', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:33:00,209', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:33:01,401', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53090) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:33:01,404', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:33:01,782', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:33:02,677', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53094) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:33:02,678', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:33:04,656', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53108) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:33:04,657', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:33:07,924', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:33:08,433', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53120) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:33:08,435', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:33:18,882', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:35:22,299', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [28558]'}
+{'time':'2021-12-17 14:35:22,300', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:35:22,301', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:35:22,303', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:35:22,697', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53328) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:35:22,699', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:35:22,770', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 456, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() missing 1 required positional argument: 'auth'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 459, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+{'time':'2021-12-17 14:35:24,344', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53336) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:35:24,345', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:35:24,417', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 456, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() missing 1 required positional argument: 'auth'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 459, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+{'time':'2021-12-17 14:35:27,498', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:35:28,006', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53350) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:35:28,008', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:35:28,161', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 456, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+TypeError: connect() missing 1 required positional argument: 'auth'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 459, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+{'time':'2021-12-17 14:36:28,345', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [29115]'}
+{'time':'2021-12-17 14:36:28,346', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:36:28,347', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:36:28,348', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:36:28,667', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53448) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:36:28,670', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:36:28,744', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 456, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 459, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+{'time':'2021-12-17 14:36:31,187', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53452) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:36:31,189', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:36:31,263', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 456, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 459, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+{'time':'2021-12-17 14:36:33,850', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:36:34,480', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53466) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:36:34,481', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:36:34,620', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 456, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 459, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 134, in connect
+    if not auth['token'] in qr_que:
+TypeError: 'NoneType' object is not subscriptable
+{'time':'2021-12-17 14:36:58,235', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [29435]'}
+{'time':'2021-12-17 14:36:58,236', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:36:58,237', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:36:58,238', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:36:59,376', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53506) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:36:59,378', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:37:00,656', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53508) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:37:00,657', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:37:07,488', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:37:08,051', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53530) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:37:08,053', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:37:14,214', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:37:29,043', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 53584) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:37:29,045', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:43:28,710', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [32223]'}
+{'time':'2021-12-17 14:43:28,711', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:43:28,712', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:43:28,713', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:43:29,541', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54096) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:43:29,543', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:43:29,670', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54098) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:43:29,671', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:43:36,153', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:43:38,851', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54120) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:43:38,853', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:43:49,364', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:44:39,744', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54226) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:44:39,746', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:44:43,846', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:44:44,350', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54246) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:44:44,351', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:44:54,797', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:02,480', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54288) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:02,481', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:03,757', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:04,321', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54296) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:04,322', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:05,039', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:05,489', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54302) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:05,490', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:06,574', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:07,096', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54318) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:07,098', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:08,316', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:08,825', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54326) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:08,826', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:11,412', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:11,941', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54338) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:11,942', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:14,577', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:15,071', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54348) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:15,072', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:16,815', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:17,325', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54356) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:17,326', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:18,349', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:18,861', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54372) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:18,862', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:19,630', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:20,202', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54382) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:20,203', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:21,831', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:22,354', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54392) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:22,355', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:23,676', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:24,184', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54406) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:24,185', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:26,468', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:26,996', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54416) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:26,998', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:29,225', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:29,715', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54430) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:29,717', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:31,398', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:31,902', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54440) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:31,903', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:41,723', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54456) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:41,724', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:43,065', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:45,690', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:46,202', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54476) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:46,204', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:48,355', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:45:48,865', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54498) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:48,867', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:51,950', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54502) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:51,952', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:53,804', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54512) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:53,805', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:54,496', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54516) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:54,497', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:55,054', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54520) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:55,056', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:55,637', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54524) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:55,638', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:56,083', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54528) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:56,084', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:56,765', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54532) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:56,766', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:57,307', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54536) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:57,308', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:57,819', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54540) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:57,820', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:58,635', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54544) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:58,636', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:45:59,718', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54550) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:45:59,719', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:46:00,230', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54562) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:46:00,232', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:46:00,861', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54566) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:46:00,862', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:46:01,693', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54572) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:46:01,694', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:46:02,291', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54576) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:46:02,293', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:46:02,387', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:03,326', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54580) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:46:03,328', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:46:04,068', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54584) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:46:04,069', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:46:04,213', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:04,921', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:05,737', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:06,121', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:06,634', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:07,401', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:07,846', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:08,411', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:09,008', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:10,237', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:10,642', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:11,365', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:12,159', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:12,767', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:13,738', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:14,639', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:46:34,940', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:47:42,558', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54718) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:47:42,560', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:47:44,477', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:47:44,712', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 54722) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:47:44,713', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:56:42,902', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [5862]'}
+{'time':'2021-12-17 14:56:42,903', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:56:42,904', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:56:42,906', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:56:46,233', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [5958]'}
+{'time':'2021-12-17 14:56:46,234', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:56:46,235', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:56:46,236', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:56:48,664', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55478) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:56:48,666', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:56:50,373', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55490) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:56:50,374', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:56:55,439', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55496) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:56:55,440', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:57:00,943', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:58:04,623', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [6717]'}
+{'time':'2021-12-17 14:58:04,624', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:58:04,625', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:58:04,626', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:58:07,415', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55632) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:07,416', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:58:07,665', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55634) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:07,666', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:58:33,707', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:58:34,030', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55688) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:34,031', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:58:36,386', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55694) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:36,387', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:58:41,830', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:58:51,249', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [7224]'}
+{'time':'2021-12-17 14:58:51,251', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 14:58:51,252', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 14:58:51,255', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 14:58:52,661', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55732) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:52,664', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:58:54,410', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55734) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:54,412', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:58:57,176', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 14:58:57,580', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55744) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:57,581', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:58:59,211', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55748) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 14:58:59,213', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 14:59:04,657', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:01:07,618', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55954) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:01:07,619', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:01:07,715', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 146, in connect
+    raise ConnectionRefusedError('authentication failed')
+ConnectionRefusedError: authentication failed
+{'time':'2021-12-17 15:01:26,044', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:01:26,258', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 55986) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:01:26,259', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:01:26,349', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 146, in connect
+    raise ConnectionRefusedError('authentication failed')
+ConnectionRefusedError: authentication failed
+{'time':'2021-12-17 15:02:27,752', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:02:27,979', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56078) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:02:27,980', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:02:28,051', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 146, in connect
+    raise ConnectionRefusedError('authentication failed')
+ConnectionRefusedError: authentication failed
+{'time':'2021-12-17 15:02:32,714', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:05:02,266', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [10405]'}
+{'time':'2021-12-17 15:05:02,267', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 15:05:02,268', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 15:05:02,269', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 15:05:04,709', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56392) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:05:04,711', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:05:07,594', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56394) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:05:07,596', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:11,313', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56564) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:11,315', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:11,386', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 146, in connect
+    raise ConnectionRefusedError('authentication failed')
+ConnectionRefusedError: authentication failed
+{'time':'2021-12-17 15:07:16,601', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:21,959', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:22,293', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56584) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:22,295', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:24,112', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:25,779', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56588) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:25,780', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:31,083', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:34,170', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56616) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:34,171', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:38,656', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:38,983', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56620) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:38,984', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:41,054', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:41,211', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56628) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:41,212', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:42,850', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:43,158', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56632) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:43,159', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:48,484', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:07:57,884', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56652) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:57,885', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:07:57,955', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 146, in connect
+    raise ConnectionRefusedError('authentication failed')
+ConnectionRefusedError: authentication failed
+{'time':'2021-12-17 15:07:58,724', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56660) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:07:58,724', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:08:00,160', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:08:00,680', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56668) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:08:00,681', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:08:03,154', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:08:03,753', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56682) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:08:03,754', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:08:09,169', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:09:43,386', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [12899]'}
+{'time':'2021-12-17 15:09:43,387', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 15:09:43,388', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 15:09:43,389', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 15:09:47,985', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56872) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:09:47,988', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:09:49,480', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56882) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:09:49,482', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:09:53,274', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:09:53,811', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56900) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:09:53,812', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:09:53,932', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 149, in connect
+    threading.Timer(5.0, between_callback, args=(sid, data['secret'],)).start()
+UnboundLocalError: local variable 'data' referenced before assignment
+{'time':'2021-12-17 15:09:56,577', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56904) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:09:56,578', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:10:02,415', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:10:02,810', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 56930) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:10:02,811', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:10:02,944', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 149, in connect
+    threading.Timer(5.0, between_callback, args=(sid, data['secret'],)).start()
+UnboundLocalError: local variable 'data' referenced before assignment
+{'time':'2021-12-17 15:10:47,124', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Shutting down'}
+{'time':'2021-12-17 15:10:47,131', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:10:47,131', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:10:47,132', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:10:47,226', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application shutdown.'}
+{'time':'2021-12-17 15:10:47,227', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application shutdown complete.'}
+{'time':'2021-12-17 15:10:47,227', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Finished server process [12899]'}
+{'time':'2021-12-17 15:11:00,355', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [13637]'}
+{'time':'2021-12-17 15:11:00,357', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 15:11:00,358', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 15:11:00,359', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 15:11:00,691', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 57032) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:11:00,693', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:11:03,634', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 57042) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:11:03,636', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:11:06,499', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 57052) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:11:06,501', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:11:06,636', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 149, in connect
+    threading.Timer(5.0, between_callback, args=(sid, data['secret'],)).start()
+UnboundLocalError: local variable 'data' referenced before assignment
+{'time':'2021-12-17 15:11:07,921', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 57056) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:11:07,923', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:11:08,071', 'name': 'engineio.server', 'level': 'ERROR', 'message': 'message async handler error'}
+Traceback (most recent call last):
+  File "/home/codespace/.local/lib/python3.8/site-packages/engineio/asyncio_server.py", line 456, in _trigger_event
+    ret = await self.handlers[event](*args)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 576, in _handle_eio_message
+    await self._handle_connect(eio_sid, pkt.namespace, pkt.data)
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 452, in _handle_connect
+    success = await self._trigger_event(
+  File "/home/codespace/.local/lib/python3.8/site-packages/socketio/asyncio_server.py", line 542, in _trigger_event
+    ret = await handler(*args)
+  File "/workspaces/IoT_Case_Stand/back/__init__2.py", line 149, in connect
+    threading.Timer(5.0, between_callback, args=(sid, data['secret'],)).start()
+UnboundLocalError: local variable 'data' referenced before assignment
+{'time':'2021-12-17 15:11:45,185', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:11:45,345', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:11:46,502', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Shutting down'}
+{'time':'2021-12-17 15:11:46,508', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:11:46,508', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:11:46,604', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application shutdown.'}
+{'time':'2021-12-17 15:11:46,605', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application shutdown complete.'}
+{'time':'2021-12-17 15:11:46,606', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Finished server process [13637]'}
+{'time':'2021-12-17 15:11:54,018', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [14174]'}
+{'time':'2021-12-17 15:11:54,019', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 15:11:54,020', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 15:11:54,022', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 15:11:54,546', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 57128) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:11:54,548', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:11:57,675', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 57132) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:11:57,677', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:27:07,837', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:27:08,454', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58408) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:27:08,455', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:27:14,299', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [20323]'}
+{'time':'2021-12-17 15:27:14,300', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 15:27:14,301', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 15:27:14,302', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 15:27:14,661', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58424) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:27:14,663', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:27:15,956', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58426) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:27:15,958', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:27:26,917', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58446) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:27:26,918', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:27:32,219', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:32:18,104', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Started server process [22467]'}
+{'time':'2021-12-17 15:32:18,105', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application startup.'}
+{'time':'2021-12-17 15:32:18,106', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application startup complete.'}
+{'time':'2021-12-17 15:32:18,107', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Uvicorn running on http://0.0.0.0:8099 (Press CTRL+C to quit)'}
+{'time':'2021-12-17 15:32:19,371', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58862) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:32:19,373', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:32:19,652', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58864) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:32:19,653', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:32:24,293', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:32:24,981', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58884) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:32:24,983', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:32:30,298', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:32:50,070', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58934) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:32:50,071', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:32:52,205', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:32:52,734', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58952) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:32:52,735', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:32:58,041', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:33:13,708', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 58982) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:33:13,709', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:33:16,474', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:33:17,015', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 59000) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:33:17,016', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:33:22,310', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:33:33,279', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 59030) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:33:33,280', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:40:15,290', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:40:15,842', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 59578) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:40:15,843', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:41:52,898', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:41:53,637', 'name': 'uvicorn.error', 'level': 'INFO', 'message': '('127.0.0.1', 59718) - "WebSocket /case/2/ws/socket.io/" [accepted]'}
+{'time':'2021-12-17 15:41:53,638', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection open'}
+{'time':'2021-12-17 15:41:58,924', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:43:35,656', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Shutting down'}
+{'time':'2021-12-17 15:43:35,659', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'connection closed'}
+{'time':'2021-12-17 15:43:35,758', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Waiting for application shutdown.'}
+{'time':'2021-12-17 15:43:35,760', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Application shutdown complete.'}
+{'time':'2021-12-17 15:43:35,764', 'name': 'uvicorn.error', 'level': 'INFO', 'message': 'Finished server process [22467]'}

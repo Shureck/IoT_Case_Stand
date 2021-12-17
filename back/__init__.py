@@ -88,8 +88,8 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("192.168.1.31", 1883, 60)
-client.loop_start()
+# client.connect("192.168.1.31", 1883, 60)
+# client.loop_start()
 
 async def dell_after(sid, secret):
     data = {}
