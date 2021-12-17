@@ -15,23 +15,23 @@ from starlette.middleware.cors import CORSMiddleware
 import logging
 import json
 
-logger=logging.getLogger()
-logger.setLevel(logging.BASIC_FORMAT)
-
-file_handler=logging.FileHandler('foo1.log')
-stream_handler=logging.StreamHandler()
-
-stream_formatter=logging.Formatter(
-    '%(asctime)-15s %(levelname)-8s %(message)s')
-file_formatter=logging.Formatter(
-    "{'time':'%(asctime)s', 'level': '%(levelname)s', 'message': '%(message)s'}"
-)
-
-file_handler.setFormatter(file_formatter)
-stream_handler.setFormatter(stream_formatter)
-
-logger.addHandler(file_handler)
-logger.addHandler(stream_handler)
+# logger=logging.getLogger()
+# logger.setLevel(logging.BASIC_FORMAT)
+#
+# file_handler=logging.FileHandler('foo1.log')
+# stream_handler=logging.StreamHandler()
+#
+# stream_formatter=logging.Formatter(
+#     '%(asctime)-15s %(levelname)-8s %(message)s')
+# file_formatter=logging.Formatter(
+#     "{'time':'%(asctime)s', 'level': '%(levelname)s', 'message': '%(message)s'}"
+# )
+#
+# file_handler.setFormatter(file_formatter)
+# stream_handler.setFormatter(stream_formatter)
+#
+# logger.addHandler(file_handler)
+# logger.addHandler(stream_handler)
 
 sio = socketio.AsyncServer(
     async_mode='asgi',
@@ -155,7 +155,7 @@ async def setState(sid, data: object):
     time.sleep(0.8)
     client.publish("/devices/wb-gpio/controls/"+data,"0")
     # dic = {"sid":sid,"secret": "asd646asd1345", "action": "changeColor", "value": "202;45;21"}
-    logger.(json.dumps(dic))
+    # logger.(json.dumps(dic))
     print(f'sender-{sid}: ', data)
 
 
