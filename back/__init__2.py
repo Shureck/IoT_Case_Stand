@@ -15,23 +15,23 @@ from starlette.middleware.cors import CORSMiddleware
 import logging
 import json
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-
-file_handler = logging.FileHandler('foo2.log')
-stream_handler = logging.StreamHandler()
-
-stream_formatter = logging.Formatter(
-    '%(asctime)-15s %(levelname)-8s %(message)s')
-file_formatter = logging.Formatter(
-    "{'time':'%(asctime)s', 'name': '%(name)s', 'level': '%(levelname)s', 'message': '%(message)s'}"
-)
-
-file_handler.setFormatter(file_formatter)
-stream_handler.setFormatter(stream_formatter)
-
-logger.addHandler(file_handler)
-logger.addHandler(stream_handler)
+# logger = logging.getLogger()
+# logger.setLevel(logging.INFO)
+#
+# file_handler = logging.FileHandler('foo2.log')
+# stream_handler = logging.StreamHandler()
+#
+# stream_formatter = logging.Formatter(
+#     '%(asctime)-15s %(levelname)-8s %(message)s')
+# file_formatter = logging.Formatter(
+#     "{'time':'%(asctime)s', 'name': '%(name)s', 'level': '%(levelname)s', 'message': '%(message)s'}"
+# )
+#
+# file_handler.setFormatter(file_formatter)
+# stream_handler.setFormatter(stream_formatter)
+#
+# logger.addHandler(file_handler)
+# logger.addHandler(stream_handler)
 
 sio = socketio.AsyncServer(
     async_mode='asgi',
@@ -147,6 +147,7 @@ async def connect(sid, environ, auth=None):
         await sio.save_session(sid, {"authorized": False})
         await sio.emit('new_qr', {"qr_secret": qr_secret}, sid)
     else:
+
         raise ConnectionRefusedError('authentication failed')
 
 

@@ -58,6 +58,15 @@
   font-family: 'Nunito', sans-serif;
 }
 
+main{
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
 .buttonContainer{
   display: flex;
   justify-content: center;

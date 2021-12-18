@@ -88,27 +88,31 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-# client.connect("192.168.1.31", 1883, 60)
-# client.loop_start()
+client.connect("192.168.1.12", 1883, 60)
+client.loop_start()
 
-async def dell_after(sid, secret):
-    data = {}
-    data['sid'] = sid
-    data['secret'] = secret
-    qr_que.pop()
-    await sio.emit("timer",data)
-    print("I killed",sid, secret)
-def between_callback(sid, secret):
+async def dell_after(sid, token):
+    if token in qr_que:
+        qr_que.remove(token)
+    print({"event": "dell_pop", "current_queue": qr_que})
+    await sio.disconnect(sid)
+    print("I killed", sid)
+
+
+def between_callback(sid, token):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
 
-    loop.run_until_complete(dell_after(sid, secret))
+    loop.run_until_complete(dell_after(sid, token))
     loop.close()
+
 
 @app.get("/case/1")
 async def giveMain(key: str = None):
     global qr_secret
-    if key == "qwe" or key == qr_secret:
+    if key in qr_que:
+        return FileResponse("../main1.html")
+    elif key == qr_secret:
         data = {}
         qr_que.append(qr_secret)
         qr_secret = secrets.token_urlsafe(10)
@@ -118,6 +122,7 @@ async def giveMain(key: str = None):
     else:
         return FileResponse("../refresh.html")
 
+
 @app.get("/case/1/getQR")
 def setColor():
     return FileResponse("../qr_generator1.html")
@@ -125,73 +130,45 @@ def setColor():
 
 current_active_users = []
 
+
 @sio.event
-async def connect(sid, environ):
+async def connect(sid, environ, auth=None):
     print(f"{sid} is connected.")
-    data_s = {}
-    data_s['secret'] = secrets.token_urlsafe(8)
-    await sio.emit('new_token', data_s)
-    print(data_s)
-    for i in data_case:
-        data = {"topic": i, "msg": data_case[i]}
-        print("data _______", data)
-        await sio.emit('topic_data', data)
-    # threading.Timer(10.0,between_callback,args=(sid,data_s['secret'],)).start()
+    print(auth)
+    if 'token' in auth and auth['token'] in qr_que:
+        await sio.save_session(sid, {"authorized": True})
+        threading.Timer(60.0, between_callback, args=(sid, auth['token'], )).start()
+        for i in data_case:
+            data = {"topic": i, "msg": data_case[i]}
+            print("data _______", data)
+            await sio.emit('topic_data', data)
+    elif "qr_viewer_key" in auth and auth["qr_viewer_key"] == "#qwe":
+        await sio.save_session(sid, {"authorized": False})
+        await sio.emit('new_qr', {"qr_secret": qr_secret}, sid)
+    else:
+        raise ConnectionRefusedError('authentication failed')
 
-
-@sio.on('message')
-async def broadcast(sid, data: object):
-    print(f'sender-{sid}: ', data)
-    await sio.emit('response', data)
 
 @sio.on('change_color')
 async def changColor(sid, data: object):
-    client.publish("/devices/wb-mrgbw-d_78/controls/RGB/on",data)
+    session = await sio.get_session(sid)
+    if not session["authorized"]:
+        print(session )
+        return
+
+    client.publish("/devices/wb-mrgbw-d_78/controls/RGB/on", data)
     print(f'sender-{sid}: ', data)
+
 
 @sio.on('button')
 async def setState(sid, data: object):
-    client.publish("/devices/wb-gpio/controls/"+data,"1")
+    session = await sio.get_session(sid)
+    if not session["authorized"]:
+        return
+    client.publish("/devices/wb-gpio/controls/"+data, "1")
     time.sleep(0.8)
-    client.publish("/devices/wb-gpio/controls/"+data,"0")
-    # dic = {"sid":sid,"secret": "asd646asd1345", "action": "changeColor", "value": "202;45;21"}
-    # logger.(json.dumps(dic))
+    client.publish("/devices/wb-gpio/controls/"+data, "0")
     print(f'sender-{sid}: ', data)
-
-
-@sio.on('update_status')
-async def broadcast_status(sid, data: object):
-    print(f'status {data["presence"]}')
-    data['sid'] = sid
-    if not data['qr_secret_html'] in qr_que:
-        await sio.emit("timer",data)
-    else:
-        threading.Timer(30.0, between_callback, args=(sid, data['secret'],)).start()
-    if data not in current_active_users:
-        current_active_users.append(data)
-
-    if data['presence'] == 'offline':
-        for user in current_active_users:
-            if user['sid'] == data['sid'] and user['secret'] == data['secret']:
-                current_active_users.remove(user)
-
-    await sio.emit('status', current_active_users)
-
-@sio.on('qr_status')
-async def qr_status(sid, data: object):
-    print(f'status {data["presence"]}')
-    data['sid'] = sid
-    data['qr_secret'] = qr_secret
-    await sio.emit('new_qr', data)
-
-@sio.event
-async def disconnect(sid):
-    print('disconnected from front end', sid)
-    for user in current_active_users:
-        if user['sid'] == sid:
-            user['presence'] = 'offline'
-    print(current_active_users)
-    await sio.emit('re_evaluate_status')
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8089)
