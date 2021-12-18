@@ -2,11 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="/case/1/styles/styles.css" rel="stylesheet">
+    <link href="C:\Users\Kir\Desktop\Новая папка (2)\IoT_Case_Stand\styles\styles.css" rel="stylesheet">
     <title>QR</title>
-    <style>
-        img{
-
+     <style>
+        table{
+            text-align:left;
         }
+        hr{
+            width: 70%;
+            margin-top:40px;
+        }
+        h2{
+            text-align: left;
+        }
+        .main{
+            display:grid;
+            width: 100%;
+            height: 100vh;
+            justify-content:center;
+            align-items:center;
+        }
+        .mainImg{
+            width: 100%;
+            display: grid;
+            justify-content:center;
+        }
+
+
+
     </style>
     <script src="/case/1/scripts/socket.io.min.js"></script>
     <script>
@@ -38,6 +62,82 @@
     </script>
 </head>
 <body>
-    <img id="qr" src="https://orangenarwhals.com/wp-content/uploads/2011/11/Nyan-Catbw.jpg">
+<main class="main">
+    <section class="mainImg">
+        <img id="qr" src="https://orangenarwhals.com/wp-content/uploads/2011/11/Nyan-Catbw.jpg">
+        <h2>Вывод:</h2>
+        <table>
+            <tr>
+                <th>Адрес</th>
+                <th>Название</th>
+                <th>Значения</th>
+            </tr>
+            <tr>
+                <td>buzzer/enabled</td>
+                <td>Пищалка</td>
+                <td>true/false</td>
+            </tr>
+            <tr>
+                <td>wb-mrgbw-d_78/RGB</td>
+                <td>RGB лента</td>
+                <td>255;255;255</td>
+            </tr>
+            <tr>
+                <td>water_control/valve</td>
+                <td>Открытие/закрытие крана</td>
+                <td>true/false</td>
+            </tr>
+            <tr>
+                <td>wb-mwac_68/K2</td>
+                <td>Счётчик воды</td>
+                <td>true/false</td>
+            </tr>
+            <tr>
+                <td>load_control/L2</td>
+                <td>Вентилятор</td>
+                <td>true/false</td>
+            </tr>
+            <tr>
+                <td>load_control/L3</td>
+                <td>Контактор</td>
+                <td>true/false</td>
+            </tr>
+        </table>
+        <hr/>
+        <h2>Датчики:</h2>
+        <table>
+            <tr>
+                <th>Адрес</th>
+                <th>Название</th>
+            </tr>
+            <tr>
+                <td>wb-msw-v3_21/Current Motion</td>
+                <td>Датчик движения</td>
+            </tr>
+            <tr>
+                <td>wb-msw-v3_21/Illuminance</td>
+                <td>Датчик освещенности</td>
+            </tr>
+            <tr>
+                <td>wb-msw-v3_21/Sound Level</td>
+                <td>Уровень звука</td>
+            </tr>
+            <tr>
+                <td>wb-msw-v3_21/CO2</td>
+                <td>Уровень CO2</td>
+            </tr>
+            <tr>
+                <td>wb-msw-v3_21/Humidity</td>
+                <td>Влажность</td>
+            </tr>
+             <tr>
+                <td>wb-msw-v3_21/Temperature</td>
+                <td>Температура</td>
+            </tr>
+        </table>
+    </section>
+</main>
+<!--    <a id="qr_link">Link</a>-->
+<!--    <p id="secret"></p>-->
 </body>
 </html>
