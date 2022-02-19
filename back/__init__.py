@@ -91,6 +91,7 @@ client.on_message = on_message
 client.connect("192.168.1.24", 1883, 60)
 client.loop_start()
 
+
 async def dell_after(sid, token):
     if token in qr_que:
         qr_que.remove(token)
