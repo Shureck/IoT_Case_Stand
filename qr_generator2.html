@@ -18,7 +18,7 @@
     <script>
         function changeQR(text) {
             var element = document.getElementById("qr");
-            const link = "https://iot-dod-2021.rtuitlab.dev/case/2?key=" + text;
+            const link = "https://iot-dod-2022.rtuitlab.dev/case/2?key=" + text;
             const qrLink = "https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=" + link;
             element.src = qrLink;
             document.getElementById("qr_link").setAttribute("href", link);

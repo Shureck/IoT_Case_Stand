@@ -8,7 +8,7 @@ this.socket = io(SERVER, {
 });
 
 socket.on("disconnect", () => {
-  window.location.replace("https://iot-dod-2021.rtuitlab.dev/case/1");
+  window.location.replace("https://iot-dod-2022.rtuitlab.dev/case/1");
 });
 
 function hslToHex(h, s, l) {
